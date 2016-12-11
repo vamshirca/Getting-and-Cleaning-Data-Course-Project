@@ -6,7 +6,7 @@ library(stats)
 
 
 #Read the List of all Features from features.txt
-features<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/features.txt")
+features<-fread("./UCI HAR Dataset/features.txt")
 
 #Create a data frame with the list of feature names
 fts<-features[,"V2"]
@@ -16,19 +16,19 @@ fts<-unlist(fts)
 
 
 #Read the activity labels from activity_labels.txt
-labels<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/activity_labels.txt")
+labels<-fread("./UCI HAR Dataset/activity_labels.txt")
 
 
 #Read the Test data set
-set_test<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/test/X_test.txt")
-subject_test<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/test/subject_test.txt")
-label_test<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/test/y_test.txt")
+set_test<-fread("./UCI HAR Dataset/test/X_test.txt")
+subject_test<-fread("./UCI HAR Dataset/test/subject_test.txt")
+label_test<-fread("./UCI HAR Dataset/test/y_test.txt")
 
 
 #Read the Train data set
-set_train<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/train/X_train.txt")
-subject_train<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/train/subject_train.txt")
-label_train<-fread("./Getting and Cleaning Data/Peer Graded Assignment/UCI HAR Dataset/train/y_train.txt")
+set_train<-fread("./UCI HAR Dataset/train/X_train.txt")
+subject_train<-fread("./UCI HAR Dataset/train/subject_train.txt")
+label_train<-fread("./UCI HAR Dataset/train/y_train.txt")
 
 
 #Get actvity names associated to its Train label
