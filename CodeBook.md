@@ -17,7 +17,7 @@ Step10: Read y_test file where each row identifies activity number. Assign the r
 Step11: Get activity names associated to its Test labels using label_test fetched from Step10  and store it in test_activity_name data frame.  
   
   
-## #Read TrainingData Sets  
+###Read Training Data Sets  
   
 Step12: Read the Training data set from X_train.txt. Assign the result to set_train.  
 Step13: Read subject_train file where each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. Assign the result to subject_train.   
@@ -31,7 +31,7 @@ Step17: Column bind to merge Set_name, Subject ,Activity name (as fetched in ste
 Step18: Merge Test and Training data sets and store the result in test_train.    
 Step19: Assign column names to test_train using fts vector created in Step 4.    
 Step20: Use grep on fts to retrieve only the columns which calculate mean and standard deviation. Store the result in mean_std_cols.  
-Step17: Subset the data.table created in step 18 to retrieve the data only for  mean and stanard deviation columns (as fetched in Step20).Name this as final_data_set.    
+Step17: Subset the data.table created in step 18 to retrieve the data only for  mean and standard deviation columns (as fetched in Step20).Name this as final_data_set.    
 Step18: Use aggregate() to calculate average of each variable for each activity and each subject grouping by Set name, Subject and Activity name. Assign the result to tidy_set.  
 Step19: Arrange tidy_set by Set_name,Subject and Activity_name.  
 Step20: View the tidy_set.  
